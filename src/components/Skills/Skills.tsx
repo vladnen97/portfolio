@@ -35,6 +35,12 @@ export const Skills = () => {
             title: 'REDUX',
             desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt eaque fugiat minima!'
         },
+        {
+            id: 6,
+            class: 'bx bxl-typescript',
+            title: 'TypeScript',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt eaque fugiat minima!'
+        },
     ]
 
     const mappedSkills = skills.map(el => <Skillbox key={el.id} class={el.class} title={el.title} desc={el.desc}/>)
