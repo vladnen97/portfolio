@@ -1,0 +1,30 @@
+
+.skillBox {
+    flex: 1 1 30rem;
+    background-color: var(--bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--second-bg-color);
+    transition: .5s ease;
+}
+
+.skillBox:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.image i {
+    font-size: 12rem;
+    color: var(--main-color);
+}
+
+.skillBox h3 {
+    margin-top: .7rem;
+    font-size: 2.6rem;
+}
+
+.skillBox p {
+    font-size: 1.6rem;
+    margin: .7rem 0 0;
+}
