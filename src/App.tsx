@@ -9,16 +9,17 @@ import {Hire} from './components/Hire/Hire';
 
 function App() {
     return (
-        <div>
+        <>
             <Header/>
-            <Home/>
-            <Skills/>
-            <Projects/>
-            <Hire/>
-            <Contact/>
+            <main>
+                <Home />
+                <Skills/>
+                <Projects/>
+                <Hire/>
+                <Contact/>
+            </main>
             <Footer/>
-        </div>
-    );
+        </>)
 }
 
 export default App;
