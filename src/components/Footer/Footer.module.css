@@ -14,10 +14,10 @@
     background: transparent;
     border: .2rem solid var(--main-color);
     border-radius: 50%;
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--main-color);
     margin: 1.5rem 1.6rem 2rem 0;
-    transition: .3s ease;
+    transition: .4s ease;
 }
 
 .socials a:last-child {
@@ -33,4 +33,21 @@
 .copyright p {
     font-size: 1.3rem;
     font-weight: 300;
+}
+
+/*---------------------media query---------------------*/
+
+@media (max-width: 991px) {
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 450px) {
+    .socials a {
+        width: 6rem;
+        height: 6rem;
+        font-size: 4rem;
+        margin: 1.5rem 3rem 2rem 0;
+    }
 }

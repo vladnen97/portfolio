@@ -62,3 +62,11 @@
 .btn:hover {
     box-shadow: none;
 }
+
+/*----------------media query--------------------*/
+
+@media (max-width: 991px) {
+    .contact {
+        min-height: auto;
+    }
+}

@@ -16,3 +16,15 @@
     flex-wrap: wrap;
     gap: 4rem;
 }
+
+/*----------------media query--------------------*/
+
+@media (max-width: 768px) {
+    .skills {
+        padding-bottom: 7rem;
+    }
+
+    .heading {
+        margin-bottom: 3rem;
+    }
+}
