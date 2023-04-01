@@ -38,9 +38,22 @@ section {
     padding: 10rem 10% 2rem;
 }
 
+/*----------------media query--------------------*/
 
-/*@media (max-width: 1200px) {*/
-/*    body {*/
-/*        background-color: red;*/
-/*    }*/
-/*}*/
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    section {
+        padding: 10rem 3% 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
