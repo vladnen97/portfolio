@@ -8,12 +8,12 @@ export const Contact = () => {
 
             <form action="src/components/Contact/Contact#">
                 <div className={s.inputBox}>
-                    <input type="text" placeholder={'Enter your name'}/>
+                    <input type="text" placeholder={'Enter your name'} required/>
                     <input type="number" placeholder={'Enter your phone'}/>
-                    <input type="email" placeholder={'Enter your email'}/>
+                    <input type="email" placeholder={'Enter your email'} required/>
                     <textarea name="" id="" cols={30} rows={10} placeholder={'Your message'}></textarea>
                 </div>
-                <input type="submit" value={'Send message'} className={s.btn}/>
+                <button type="submit" className={s.btn}>Send</button>
             </form>
         </section>
     );
