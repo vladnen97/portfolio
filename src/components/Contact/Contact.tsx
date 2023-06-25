@@ -6,7 +6,7 @@ export const Contact = () => {
         <section className={s.contact} id={'contact'}>
             <h2 className={s.heading}>Contact <span>Me!</span></h2>
 
-            <form action="src/components/Contact/Contact#">
+            <form>
                 <div className={s.inputBox}>
                     <input type="text" placeholder={'Enter your name'} required/>
                     <input type="number" placeholder={'Enter your phone'}/>
