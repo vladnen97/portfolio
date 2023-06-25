@@ -69,7 +69,7 @@ export const Particle = () => {
                     distance: 200,
                 },
                 push: {
-                    quantity: 4,
+                    quantity: 1,
                 },
                 remove: {
                     quantity: 2,
