@@ -4,6 +4,18 @@
     align-items: center;
     gap: 3rem;
 }
+.photo {
+    position: relative;
+    transition: 0.5s;
+    animation-name: fly;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.photo:hover {
+    transform: scale(1.05, 1.05);
+}
 
 .photo img {
     width: 35vw;
@@ -35,6 +47,16 @@ span {
     font-size: 1.6rem;
 }
 
+/*---------------------animations---------------------*/
+
+@keyframes fly {
+    0%   {top:0;}
+    25%  {top:5rem;}
+    50%  {top:0;}
+    75%  {top: -5rem;}
+    100% {top:0;}
+}
+
 /*---------------------media query---------------------*/
 
 @media (max-width: 991px) {
@@ -46,7 +68,7 @@ span {
 @media (max-width: 768px) {
     .home {
         flex-direction: column;
-        gap: 4rem;
+        gap: 10rem;
     }
 
     .content h3 {
@@ -60,6 +82,14 @@ span {
     .photo img {
         width: 65vw;
     }
+
+    @keyframes fly {
+        0%   {top: 0;}
+        25%  {top: 4rem;}
+        50%  {top: 0;}
+        75%  {top: -4rem;}
+        100% {top: 0;}
+    }
 }
 
 @media (max-width: 450px) {
@@ -69,7 +99,12 @@ span {
 }
 
 @media (max-width: 360px) {
+    .photo:hover {
+        transform: scale(1.02, 1.02);
+    }
+
     .photo img {
         width: 90vw;
     }
 }
+
