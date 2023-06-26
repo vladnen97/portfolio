@@ -14,7 +14,7 @@ function App() {
             <Particle/>
             <Header/>
             <main>
-                <Home />
+                <Home/>
                 <Skills/>
                 <Projects/>
                 <Hire/>

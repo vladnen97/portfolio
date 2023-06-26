@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Skills.module.css'
 import {Skillbox} from './Skillbox/Skillbox';
+import {Fade} from 'react-awesome-reveal';
 
 
 export const Skills = () => {
@@ -48,8 +49,9 @@ export const Skills = () => {
 
     return (
         <section className={s.skills} id={'skills'}>
-            <h2 className={s.heading}>My <span>Skills</span></h2>
-
+            <Fade delay={300}>
+                <h2 className={s.heading}>My <span>Skills</span></h2>
+            </Fade>
             <div className={s.container}>
                 {mappedSkills}
             </div>
