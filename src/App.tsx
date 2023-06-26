@@ -9,6 +9,7 @@ import {Hire} from './components/Hire/Hire';
 import {Particle} from './components/Particle';
 
 function App() {
+
     return (
         <>
             <Particle/>

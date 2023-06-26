@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import s from './Header.module.css'
+import {Link} from 'react-scroll';
 
 
 export const Header = () => {
@@ -8,15 +9,28 @@ export const Header = () => {
 
     return (
         <header className={s.header}>
-            <a href="#home" className={s.logo}>Portfolio</a>
-
-            <i className={isOpen ? 'bx bx-x' : 'bx bx-menu'} id={s.menu} onClick={() => setIsOpen(!isOpen)}></i>
+            <div className={s.wrapper}>
+                <span className={s.logo}>Portfolio</span>
+                <i className={isOpen ? 'bx bx-x' : 'bx bx-menu'} id={s.menu} onClick={() => setIsOpen(!isOpen)}></i>
+            </div>
 
             <nav className={s.navbar + (isOpen ? ' ' + s.active : '')}>
-                <a href="#home" onClick={() => setIsOpen(false)}>Home</a>
-                <a href="#skills" onClick={() => setIsOpen(false)}>Skills</a>
-                <a href="#projects" onClick={() => setIsOpen(false)}>Projects</a>
-                <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
+                <Link activeClass={s.active} to={'home'} spy={true} smooth={true} offset={0}
+                      onClick={() => setIsOpen(false)}>
+                    Home
+                </Link>
+                <Link activeClass={s.active} to={'skills'} spy={true} smooth={true} offset={1}
+                      onClick={() => setIsOpen(false)}>
+                    Skills
+                </Link>
+                <Link activeClass={s.active} to={'projects'} spy={true} smooth={true} offset={1}
+                      onClick={() => setIsOpen(false)}>
+                    Projects
+                </Link>
+                <Link activeClass={s.active} to={'contact'} spy={true} smooth={true} offset={1}
+                      onClick={() => setIsOpen(false)}>
+                    Contact
+                </Link>
             </nav>
         </header>
     )

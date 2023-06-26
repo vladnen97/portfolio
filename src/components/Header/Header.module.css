@@ -19,10 +19,11 @@
 }
 
 .navbar a {
+    cursor: default;
     font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
-    transition: .3s;
+    transition: .2s;
 }
 
 .navbar a:hover,
@@ -46,25 +47,41 @@
 }
 
 @media (max-width: 768px) {
+    .header {
+        display: block;
+        padding: 0;
+    }
+
+    .wrapper {
+        position: relative;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--second-bg-color);
+        padding: 2rem 3%;
+    }
+
     #menu {
         display: block;
     }
 
     .navbar {
         position: absolute;
-        top: 100%;
+        top: -250px;
         left: 0;
-        z-index: 100;
+        z-index: 99;
         width: 100%;
         padding: 1rem 3%;
+        text-align: center;
         background-color: var(--second-bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        display: none;
+        transition: .5s;
     }
 
     .navbar.active {
-        display: block;
+        top: 100%;
     }
 
     .navbar a {
