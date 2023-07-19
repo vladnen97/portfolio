@@ -8,34 +8,39 @@ export const Projects = () => {
         {
             id: 1,
             img: 'https://placehold.jp/400x300.png',
-            link: 'https://www.google.com',
+            linkGitHub: 'https://www.google.com',
+            linkDeploy: 'https://www.google.com',
             title: 'Social Network',
             desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         },
         {
             id: 2,
             img: 'https://placehold.jp/400x300.png',
-            link: 'https://www.google.com',
+            linkGitHub: 'https://www.google.com',
+            linkDeploy: 'https://www.google.com',
             title: 'ToDo',
             desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         },
         {
             id: 3,
             img: 'https://placehold.jp/400x300.png',
-            link: 'https://www.google.com',
-            title: 'Social Network',
+            linkGitHub: 'https://www.google.com',
+            linkDeploy: 'https://www.google.com',
+            title: 'Homework',
             desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         },
         {
             id: 4,
             img: 'https://placehold.jp/400x300.png',
-            link: 'https://www.google.com',
-            title: 'ToDo',
+            linkGitHub: 'https://www.google.com',
+            linkDeploy: 'https://www.google.com',
+            title: 'Cards',
             desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         },
     ]
 
-    const mappedProjects = projects.map(el => <Projectbox key={el.id} img={el.img} link={el.link} title={el.title}
+    const mappedProjects = projects.map(el => <Projectbox key={el.id} img={el.img} linkGitHub={el.linkGitHub}
+                                                          title={el.title} linkDeploy={el.linkDeploy}
                                                           desc={el.desc}/>)
 
 
