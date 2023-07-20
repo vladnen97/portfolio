@@ -18,7 +18,7 @@
 }
 
 .photo img {
-    width: 35vw;
+    width: 25vw;
     border: 5px solid var(--main-color);
     border-radius: 20%;
 }
@@ -80,7 +80,7 @@ span {
     }
 
     .photo img {
-        width: 65vw;
+        width: 50vw;
     }
 
     @keyframes fly {
