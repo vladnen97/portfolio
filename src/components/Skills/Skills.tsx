@@ -1,50 +1,96 @@
 import React from 'react';
 import s from './Skills.module.css'
-import {Skillbox} from './Skillbox/Skillbox';
 import {Fade} from 'react-awesome-reveal';
+import {Skillbox} from './Skillbox/SkillBox';
+import sass from '../../assets/svg/sass.svg'
+import nextjs from '../../assets/svg/next-js.svg'
+import redux from '../../assets/svg/redux.svg'
+import storybook from '../../assets/svg/storybook.svg'
+import unitTesting from '../../assets/svg/unit-testing.svg'
+import html from '../../assets/svg/html.svg'
+import css from '../../assets/svg/css.svg'
+import js from '../../assets/svg/js.svg'
+import react from '../../assets/svg/react.svg'
+import ts from '../../assets/svg/ts.svg'
 
 
 export const Skills = () => {
     const skills = [
         {
             id: 1,
-            class: 'bx bxl-html5',
+            svg: html,
             title: 'HTML',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt eaque fugiat minima!'
+            desc: 'Hypertext markup language for viewing web pages in a browser.'
         },
         {
             id: 2,
-            class: 'bx bxl-css3',
+            svg: css,
             title: 'CSS',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt eaque fugiat minima!'
+            desc: 'Document appearance description language'
         },
         {
             id: 3,
-            class: 'bx bxl-javascript',
+            svg: js,
             title: 'JavaScript',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt eaque fugiat minima!'
+            desc: 'A programming language that allows you to create dynamically updated content.'
         },
         {
             id: 4,
-            class: 'bx bxl-react',
-            title: 'REACT',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt eaque fugiat minima!'
+            svg: react,
+            title: 'React',
+            desc: 'An open source library for developing user interfaces.'
         },
         {
             id: 5,
-            class: 'bx bxl-redux',
-            title: 'REDUX',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt eaque fugiat minima!'
+            svg: redux,
+            title: 'Redux',
+            desc: 'An open source JavaScript library for managing application state.'
+        },
+        {
+            id: 11,
+            svg: redux,
+            title: 'Redux Toolkit',
+            desc: 'Package that makes working with Redux easier.'
+        },
+        {
+            id: 12,
+            svg: redux,
+            title: 'RTK Query',
+            desc: 'Powerful tool for loading and caching data.'
         },
         {
             id: 6,
-            class: 'bx bxl-typescript',
+            svg: ts,
             title: 'TypeScript',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt eaque fugiat minima!'
+            desc: 'A programming language that extends the capabilities of JavaScript.'
+        },
+        {
+            id: 7,
+            svg: sass,
+            title: 'SASS',
+            desc: 'A CSS-based metalanguage designed to increase the abstraction level of CSS code and simplify cascading style sheet files.'
+        },
+        {
+            id: 8,
+            svg: nextjs,
+            title: 'Next.js',
+            desc: 'A JavaScript framework that uses React to build Server Side Render (SSR) applications and statically generated websites.'
+        },
+        {
+            id: 9,
+            svg: storybook,
+            title: 'StoryBook',
+            desc: 'Is a JavaScript tool for organizing user interfaces that makes component development, testing, and documentation more efficient and easier.'
+        },
+        {
+            id: 10,
+            svg: unitTesting,
+            title: 'Unit Testing',
+            desc: 'A process in programming that allows you to check for the correctness of individual modules of the source code of the program.'
         },
     ]
 
-    const mappedSkills = skills.map(el => <Skillbox key={el.id} class={el.class} title={el.title} desc={el.desc}/>)
+    const mappedSkills = skills.map(el => <Skillbox key={el.id} svg={el.svg} title={el.title} desc={el.desc}/>)
 
 
     return (
