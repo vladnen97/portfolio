@@ -3,7 +3,7 @@ import s from './Skillbox.module.css'
 import {Fade} from 'react-awesome-reveal';
 
 type SkillboxPropsType = {
-    class: string
+    svg: string
     title: string
     desc: string
 }
@@ -15,7 +15,7 @@ export const Skillbox = (props: SkillboxPropsType) => {
         }}>
             <div className={s.skillBox}>
                 <div className={s.image}>
-                    <i className={props.class}></i>
+                    <img src={props.svg} alt=""/>
                 </div>
                 <h3>{props.title}</h3>
                 <p>
@@ -25,4 +25,3 @@ export const Skillbox = (props: SkillboxPropsType) => {
         </Fade>
     )
 }
-
