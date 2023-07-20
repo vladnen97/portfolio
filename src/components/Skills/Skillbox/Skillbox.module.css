@@ -14,9 +14,8 @@
     transform: scale(1.02);
 }
 
-.image i {
-    font-size: 12rem;
-    color: var(--main-color);
+.image svg {
+    fill: var(--main-color);
 }
 
 .skillBox h3 {
