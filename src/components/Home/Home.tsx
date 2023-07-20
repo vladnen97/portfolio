@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Home.module.css'
 import ReactTypingEffect from 'react-typing-effect';
 import {Fade} from 'react-awesome-reveal';
-import me from '../../assets/me.png'
+import me from '../../assets/images/me.png'
 
 export const Home = () => {
     return (

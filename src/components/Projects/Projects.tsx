@@ -2,10 +2,10 @@ import React from 'react';
 import s from './Projects.module.css'
 import {Projectbox} from './Projectbox/Projectbox';
 import {Fade} from 'react-awesome-reveal';
-import  socialNetwork  from '../../assets/social-network.jpg'
-import  flashCards  from '../../assets/flashcards.png'
-import  toDoList  from '../../assets/to-do-list.jpg'
-import  homework  from '../../assets/homework.jpg'
+import  socialNetwork  from '../../assets/images/social-network.jpg'
+import  flashCards  from '../../assets/images/flashcards.png'
+import  toDoList  from '../../assets/images/to-do-list.jpg'
+import  homework  from '../../assets/images/homework.jpg'
 
 export const Projects = () => {
     const projects = [
