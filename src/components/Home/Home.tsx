@@ -2,6 +2,7 @@ import React from 'react';
 import s from './Home.module.css'
 import ReactTypingEffect from 'react-typing-effect';
 import {Fade} from 'react-awesome-reveal';
+import me from '../../assets/me.png'
 
 export const Home = () => {
     return (
@@ -25,7 +26,7 @@ export const Home = () => {
             </div>
             <Fade  delay={300} duration={1500}>
                 <div className={s.photo}>
-                    <img src="https://placehold.jp/600x600.png" alt=""/>
+                    <img src={me} alt=""/>
                 </div>
             </Fade>
         </section>
