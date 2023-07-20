@@ -12,7 +12,7 @@ export const Contact = () => {
 
     const submitHandler = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        axios.post(`http://localhost:3010/feedback`, {name, phone, email, title, message})
+        axios.post(`https://portfolio-email-feedback-server.vercel.app/feedback`, {name, phone, email, title, message})
             .then((res) => alert(res.data.message))
     }
 
