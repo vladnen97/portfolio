@@ -36,10 +36,10 @@ export const Projects = () => {
         {
             id: 4,
             img: flashCards,
-            linkGitHub: 'https://www.google.com',
-            linkDeploy: 'https://www.google.com',
+            linkGitHub: 'https://github.com/vladnen97/flashcards',
+            linkDeploy: 'https://flashcards-lake.vercel.app',
             title: 'Cards',
-            desc: 'Not implemented yet'
+            desc: 'These are cards that carry information on both sides and are intended to be used as a memory aid. Each card has a question on one side and an answer on the other.'
         },
     ]
 
